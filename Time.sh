@@ -7,6 +7,6 @@ echo "script started at the time $StartTime"
 EndTime=$(date +%s)
 echo "script completed at the time $EndTime"
 
-TotalTime= $($EndTime-$StartTime)
+TotalTime= $(($EndTime-$StartTime))
 
 echo "total timetaken is $TotalTime"
