@@ -12,10 +12,10 @@ mkdir -p ${log_dir}
 
 validate(){
     if [ $1 -ne 0 ]; then
-    echo "$2 installation is failed"
+    echo "$2 installation is failed" | tee -a $log_file
     exit 1
 else 
-    echo "$2 installation is succesfull"
+    echo "$2 installation is succesfull" | tee -a $log_file
 fi
 }
 
