@@ -8,6 +8,12 @@ fi
 
 echo "proceeding.."
 dnf install nginxdghghd -y
+if [ $? -ne 0 ]; then
+    echo "nginx installation is failed"
+    exit 1
+else 
+    echo "nginx installation is succesfull"
+fi
 
 echo "still proceeding.."
 dnf install myshjdf
