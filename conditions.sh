@@ -7,4 +7,7 @@ if [ ${user_id} -ne 0 ]; then
 fi
 
 echo "proceeding.."
-dnf install nginx -y
+dnf install nginxdghghd -y
+
+echo "still proceeding.."
+dnf install myshjdf
