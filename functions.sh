@@ -20,6 +20,6 @@ dnf install nginx -y
 validate "$?" "nginx"
 
 echo "still proceeding.."
-dnf install myshjdf
+dnf install mysql -y
 
 validate "$?" "install mysql"
