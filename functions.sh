@@ -16,8 +16,8 @@ fi
 }
 
 echo "proceeding.."
-echo "nginx installation is succesfull"
-validate "$?" "install nginx"
+dnf install nginx -y
+validate "$?" "nginx"
 
 echo "still proceeding.."
 dnf install myshjdf
