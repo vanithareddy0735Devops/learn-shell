@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "all args passed to the script as a word $*"
 echo "all args passed to the script $@"
 echo "no of args passed to the script $#"
 echo "1st var passed to the script $1"
