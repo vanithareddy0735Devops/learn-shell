@@ -23,6 +23,14 @@ fi
 for package in $@
 do 
 echo "proceeding.."
-dnf install $package -y &>> ${log_file}
-validate "$?" "$package"
+dnf list installed $package
+if [ $? -ne 0 ]; then
+    echo "going to installl $package"
+   dnf install $package -y &>> ${log_file}
+   validate "$?" "$package"
+else
+
+ echo "already installed $package hence skip" | tee -a $log_file
+fi
+
 done
