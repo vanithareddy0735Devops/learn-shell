@@ -10,3 +10,9 @@ count=count+1
 
 echo "the count is : $count"
 
+FRUITS=("banana" "apple" "mango")
+echo "$FRUITS"
+echo "${FRUITS}"
+echo "$FRUITS@"
+echo "${FRUITS@}"
+echo "$[FRUITS@]"
