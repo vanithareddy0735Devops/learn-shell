@@ -8,4 +8,10 @@ echo "who is running the script $USER"
 echo "present working directory $PWD"
 echo "Home directory of the current user $HOME"
 echo "process id of the current script $$"
+sleep 10
+echo "process id of the command running in backgroup $!"
+wait $! # script waits until $! command completes
+echo "line number :: $LINENUMBER"
+echo "exit status of the previous command $?"
+echo "total execution time $SECONDS"
 
