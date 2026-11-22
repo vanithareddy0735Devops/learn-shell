@@ -11,7 +11,7 @@ echo "process id of the current script $$"
 sleep 10 &
 echo "process id of the command running in backgroup $!"
 wait $! # script waits until $! command completes
-echo "line number :: $LINENUMBER"
+echo "line number :: $LINENO"
 echo "exit status of the previous command $?"
 echo "total execution time $SECONDS"
 
