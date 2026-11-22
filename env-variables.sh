@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "the variable value is $COURSE"
+echo "$COURSE"
+echo "$DURATION"
+echo "$TRAINER"
