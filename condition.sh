@@ -12,7 +12,7 @@ elif [ $Marks -ls 50]; then
     echo "Second class"
 elif [ $Marks -ls 60]; then
     echo "First class"
-else [ $Marks -ls 70]; then
+else [ $Marks -ls 70];
     echo "Distinction"
 fi 
 echo "Program end"
