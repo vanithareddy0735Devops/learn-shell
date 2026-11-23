@@ -18,7 +18,7 @@ mkdir -p ${log_dir}
 for package in $@
 do 
 echo "proceeding.."
-dnf list installed $package | tee -a $log_file
+dnf list installed $package &>> $log_file
 if [ $? -ne 0 ]; then
     echo "going to installl $package"
    dnf install $package -y &>> ${log_file}
